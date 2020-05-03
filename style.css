@@ -1,0 +1,36 @@
+body{
+    
+    height: 100vh;
+    margin: 0;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+@media screen and (orientation: portrait) {
+    div {
+        width: 25%;
+    }
+    
+    #div-landscape{
+        display: none;
+}
+}
+@media screen and (orientation: landscape){
+    div {
+        width: 12.5%;
+    }
+
+
+    }
+
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12.5%;
+    
+}
+img{
+        width: 75%;
+    }
