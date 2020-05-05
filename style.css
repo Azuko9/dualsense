@@ -6,6 +6,12 @@ body{
     flex-wrap: wrap;
     align-items: center;
 }
+@keyframes fondu{
+    0%{background-image: url(c06.png);}
+    33.33%{background-image: url(c01.png);}
+    66.66%{background-image: url(c02.png);}
+    100%{background-image: url(c03.png);}
+}
 
 @media screen and (orientation: portrait) {
     div {
@@ -29,8 +35,13 @@ div{
     justify-content: center;
     align-items: center;
     height: 12.5%;
+    background-size: cover;
+    animation: fondu 5s ease-in-out  infinite  alternate both;
+}
+
+
+.d2{
+    width:75%;
     
 }
-img{
-        width: 75%;
-    }
+
